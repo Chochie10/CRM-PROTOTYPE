@@ -1,4 +1,4 @@
-import TeamPerformanceContainer from '../components/TeamPerformance/TeamPerformanceContainer';
+import TeamPerformanceContainer from '../components/Manager/TeamPerformance/TeamPerformanceContainer';
 
 const TeamPerformancePage = () => {
   return <TeamPerformanceContainer />;

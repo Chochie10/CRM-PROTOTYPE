@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { useAuth } from '../../auth/authContext';
-import { Card } from '../common/Card';
-import { Badge } from '../common/Badge';
-import { MOCK_USERS } from '../../data/mockUsers';
-import { MOCK_DAILY_SALES } from '../../data/mockSales';
+import { useAuth } from '../../../auth/authContext';
+import { Card } from '../../common/Card';
+import { Badge } from '../../common/Badge';
+import { MOCK_USERS } from '../../../data/mockUsers';
+import { MOCK_DAILY_SALES } from '../../../data/mockSales';
 
 export const TeamRankings = () => {
   const { user } = useAuth();

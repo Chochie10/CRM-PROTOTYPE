@@ -1,6 +1,6 @@
-import React from "react";
-import { NavLink, useNavigate } from "react-router-dom";
-import { useAuth } from "../auth/authContext";
+import React from 'react';
+import { NavLink, useNavigate } from 'react-router-dom';
+import { useAuth } from '../auth/authContext';
 import { 
   LayoutDashboard, 
   ClipboardList, 
@@ -14,8 +14,8 @@ import {
   Trophy, 
   Settings,
   LogOut
-} from "lucide-react";
-import { Button } from "../components/common/Button";
+} from 'lucide-react';
+import { Button } from '../components/common/Button';
 
 const iconMap: Record<string, any> = {
   LayoutDashboard, 
@@ -44,7 +44,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
   
   const handleLogout = () => {
     logout();
-    navigate("/login");
+    navigate('/login');
   };
   
   const getNavigationByRole = () => {
@@ -81,6 +81,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
         { name: "Users", path: "/users", icon: "Users" },
         { name: "Roles", path: "/roles", icon: "Shield" },
         { name: "Audit Logs", path: "/audit-logs", icon: "FileText" },
+        { name: "Reports", path: "/reports", icon: "FileText" },
         { name: "Settings", path: "/settings", icon: "Settings" },
       ];
     }
@@ -106,9 +107,9 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
       >
         {/* Logo Section */}
         <div className="p-6 border-b border-gray-200">
-          <h1 className="text-xl font-bold text-gray-900">Informatics</h1>
+          <h1 className="text-xl font-bold text-gray-900">SPMS</h1>
           <p className="text-sm text-gray-500 mt-1">Sales Performance</p>
-          <p className="text-xs text-gray-400 mt-1">Management System</p>
+          <p className="text-xs text-gray-400 mt-0.5">Management System</p>
         </div>
         
         {/* Navigation Links */}
@@ -150,7 +151,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
               <p className="text-xs text-gray-500">{user.role}</p>
               {user.centerId && (
                 <p className="text-xs text-gray-400 mt-0.5">
-                  {user.centerId.replace("center_", "").charAt(0).toUpperCase() + user.centerId.slice(8)}
+                  {user.centerId.replace('center_', '').charAt(0).toUpperCase() + user.centerId.slice(8)}
                 </p>
               )}
             </div>

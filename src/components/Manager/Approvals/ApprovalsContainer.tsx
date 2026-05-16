@@ -1,7 +1,7 @@
 import React from 'react';
-import { useAuth } from '../../auth/authContext';
+import { useAuth } from '../../../auth/authContext';
 import { ApprovalList } from './ApprovalList';
-import { RoleBasedWrapper } from '../../auth/RBWrapper';
+import { RoleBasedWrapper } from '../../../auth/RBWrapper';
 
 const ApprovalContainer = () => {
   const { user } = useAuth();

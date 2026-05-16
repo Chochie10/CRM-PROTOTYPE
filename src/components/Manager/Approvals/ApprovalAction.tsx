@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Button } from '../common/Button';
-import { Modal } from '../common/Modal';
-import { Input } from '../common/Input';
+import { Button } from '../../common/Button';
+import { Modal } from '../../common/Modal';
+import { Input } from '../../common/Input';
 import { CheckCircle, XCircle } from 'lucide-react';
 
 interface ApprovalActionsProps {

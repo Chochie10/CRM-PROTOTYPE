@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { useAuth } from '../../auth/authContext';
-import { Card } from '../common/Card';
-import { Badge } from '../common/Badge';
+import { useAuth } from '../../../auth/authContext';
+import { Card } from '../../common/Card';
+import { Badge } from '../../common/Badge';
 import { ApprovalActions } from './ApprovalAction';
 import { AlertCircle, Clock } from 'lucide-react';
-import { MOCK_TARGETS } from '../../data/mockTargets';
-import { MOCK_USERS } from '../../data/mockUsers';
+import { MOCK_TARGETS } from '../../../data/mockTargets';
+import { MOCK_USERS } from '../../../data/mockUsers';
 
 export const ApprovalList = () => {
   const { user } = useAuth();

@@ -1,9 +1,9 @@
 import React from 'react';
-import { useAuth } from '../../auth/authContext';
-import { Card } from '../common/Card';
-import { TeamRankings } from '../TeamPerformance/TeamRankings';
-import { ComplianceTracker } from '../TeamPerformance/ComplianceTracker';
-import { RoleBasedWrapper } from '../../auth/RBWrapper';
+import { useAuth } from '../../../auth/authContext';
+import { Card } from '../../common/Card';
+import { TeamRankings } from './TeamRankings';
+import { ComplianceTracker } from './ComplianceTracker';
+import { RoleBasedWrapper } from '../../../auth/RBWrapper';
 
 const TeamPerformanceContainer = () => {
   const { user } = useAuth();
